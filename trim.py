@@ -14,7 +14,7 @@ def trim(start,end,file_name,format_,i):
 if __name__ == '__main__':
 
 	with open("time_stamps.txt", "rb") as file:
-	    contents = list(map(float,file.read().decode("utf-8").split(',')))
+	    contents = list(map(float,file.read().decode("utf-8").split(',').strip()))
 
 	file_name = "male"
 	format_ = "wav"
